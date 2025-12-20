@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Project ClueChain",
+    "description": "A LLM-driven procedural detective game, powered by a local LLM.",
+    "tags": ["C#", "Game Dev"],
+    "link": "https://github.com/smartflame17/ClueChain",
+    "isExternal": true
+  },
+  {
+    "title": "TapiEngine",
+    "description": "Game engine with minimal dependencies, utilizing DirectX 11 for hardware acceleration.",
+    "tags": ["C++","Game Dev", "DirectX"],
+    "link": "https://github.com/smartflame17/TapiEngine",
+    "isExternal": true
+  },
+  {
+    "title": "SimpliCode",
+    "description": "A solution for detecting dupicate code snippets in Unreal Engine projects using AST analysis.",
+    "tags": ["C#", "C++", "Unreal Engine"],
+    "link": "https://github.com/smartflame17/SimpliCode",
+    "isExternal": true
+  }
+]
