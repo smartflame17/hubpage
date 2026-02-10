@@ -21,6 +21,54 @@ body {
     padding: 20px;
 }
 
+.site-header,
+.site-footer {
+    border-bottom: 1px solid #333;
+}
+
+.site-header-inner,
+.site-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.site-brand {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    gap: 12px;
+}
+
+.site-nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    border-top: 1px solid #333;
+    border-bottom: none;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+}
+
 /* Header */
 .hero {
     padding: 60px 20px;
@@ -75,11 +123,3 @@ body {
     margin-top: 10px;
 }
 .btn:hover { text-decoration: underline; }
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px;
-    font-size: 0.9rem;
-    color: #666;
-}
