@@ -3,40 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartflame's Hub</title>
+    <meta name="description" content="Portfolio and blog page for Jason Kim.">
+    <title>Jason Kim | Portfolio & Blog</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <site-header home-url="index.html" github-url="https://github.com/smartflame17"></site-header>
 
-    <header class="hero">
+    <header class="hero" aria-labelledby="hero-title">
         <div class="container">
-            <h1>Hi, I'm <span class="highlight">Jason Kim</span></h1>
-            <p>Welcome to my digital hub. Here lies a collection of my experiments, tools, and games.</p>
-            <div class="social-links">
-                <a href="https://github.com/smartflame17" target="_blank">GitHub</a>
-                <a href="mailto:jasonjiseop.kim@email.com">Contact</a>
+            <p class="eyebrow">Portfolio / Blog</p>
+            <h1 id="hero-title">Hi, I'm <span class="highlight">Jason Kim</span></h1>
+            <p>
+                I build playful experiments, practical tools, and polished web experiences.
+                Browse selected work below and read recent posts from my blog.
+            </p>
+            <div class="social-links" aria-label="Quick links">
+                <a href="index.html">Main Page</a>
+                <a href="https://github.com/smartflame17" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <h2>Projects</h2>
-        <div id="project-list" class="grid">
-            <p>Loading projects...</p>
-        </div>
+    <main id="main-content" class="container page-content">
+        <section class="section-block" aria-labelledby="portfolio-heading">
+            <div class="section-heading">
+                <h2 id="portfolio-heading">Featured Portfolio</h2>
+                <p>Add your images and project details directly into these reusable card blocks.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-card">
+                    <div class="image-placeholder" role="img" aria-label="Placeholder for project screenshot"></div>
+                    <div class="portfolio-copy">
+                        <h3>Project Title 01</h3>
+                        <p>Short description for your project goes here. Mention purpose, stack, and impact.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="image-placeholder" role="img" aria-label="Placeholder for project screenshot"></div>
+                    <div class="portfolio-copy">
+                        <h3>Project Title 02</h3>
+                        <p>Replace this text with your real project summary and insert an optimized image.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="image-placeholder" role="img" aria-label="Placeholder for project screenshot"></div>
+                    <div class="portfolio-copy">
+                        <h3>Project Title 03</h3>
+                        <p>Use responsive images (`srcset`) and lazy loading when you add real assets.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block" aria-labelledby="blog-heading">
+            <div class="section-heading">
+                <h2 id="blog-heading">Recent Blog Posts</h2>
+                <p>Use this section as a boilerplate for new articles and writing updates.</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h3>Blog Post Title</h3>
+                    <p class="blog-meta">Jan 2026 • 5 min read</p>
+                    <p>Add a short teaser for your post and link this card to the full article page.</p>
+                    <a class="btn" href="#" aria-label="Read Blog Post Title">Read post &rarr;</a>
+                </article>
+
+                <article class="blog-card">
+                    <h3>Another Blog Entry</h3>
+                    <p class="blog-meta">Feb 2026 • 7 min read</p>
+                    <p>Share process notes, tutorials, updates, or behind-the-scenes development insights.</p>
+                    <a class="btn" href="#" aria-label="Read Another Blog Entry">Read post &rarr;</a>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <main class="container">
-        <h2>Blog</h2>
-        <div id="blog-list" class="grid">
-            <p>Under Construction...</p>
-        </div>
-    </main>
+    <site-footer home-url="index.html" github-url="https://github.com/smartflame17"></site-footer>
 
-    <footer>
-        <p>&copy; 2025 Smartflame. Hosted on GitHub Pages.</p>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/layout-components.js"></script>
 </body>
 </html>
